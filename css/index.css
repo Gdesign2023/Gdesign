@@ -24,6 +24,7 @@ body {
     background-color: transparent;
     z-index: 1000000;
     height: 100vh;
+    overflow: hidden;
 }
 
 .main {
