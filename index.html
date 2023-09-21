@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        <a id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <div class="titre">
+            <span>Gdesign</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="menu-tel">
+                <a id="closeBtn" class="close">×</a>
+                <span class="titre-m">Gdesign</span>
+                <button onclick="loadPage('./html/main.html')" id="button-menu" class="main-m">Home</button>
+                <button onclick="loadPage('./html/cqnf.html')" id="button-menu" class="cqnf-m">Ce que nous
+                    faisons</button>
+                <button onclick="loadPage('./html/nt.html')" id="button-menu" class="nt-m">Nos travaux</button>
+                <button onclick="loadPage('./html/presentation.html')" id="button-menu"
+                    class="presentation-m">Présentation</button>
+                <button onclick="loadPage('./html/nc.html')" id="button-menu" class="nc-m">Nous contacter</button>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="main"></div>
+
+    <footer class="footer">
+        coucou
+    </footer>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
