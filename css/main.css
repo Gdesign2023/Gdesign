@@ -17,7 +17,8 @@
  .img-gdesign img{
     border-radius: 20px;
     border: 2px solid #fff;
-    height: 70%;
+    width: 90%;
+    height: 100%;
  }
 
  .texte-gdesign{
@@ -94,4 +95,91 @@
 }
 .carousel-img img {
     width: 100%;
+}
+@media screen and (max-width: 758px){
+    .containe-main{
+        margin-top: 30px;
+        width: 100vw;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "img-gdesign""texte-gdesign""img-deux""texte-deux""texte-carousel""carousel-main";
+        gap: 25px;
+     }
+     .img-gdesign{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: img-gdesign;
+     }
+     .img-gdesign img{
+        border-radius: 20px;
+        border: 2px solid #fff;
+        width: 90%;
+        height: 100%;
+     }
+    
+     .texte-gdesign{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        grid-area: texte-gdesign;
+     }
+    .titre-page{
+        width: 80%;
+        color: #BDA039;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .texte-page{
+        margin-top: 10px;
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    .texte-deux{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-area: texte-deux;
+    }
+    
+    .image-deux{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: img-deux;
+    }
+    .image-deux img{
+        border-radius: 20px;
+        border: 2px solid #fff;
+        width: 80%;
+    }
+    .carousel{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: carousel-main;
+    }
+    .texte-carousel{
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        grid-area: texte-carousel;
+        font-size: 40px;
+        color: #BDA039;
+    }
+    .texte-carousel p{
+        font-size: 30px;
+    }
 }
