@@ -9,15 +9,16 @@ video{
   }
 .titre {
     display: flex;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     justify-content: center;
     color: #BDA039;
+    margin-bottom: 20px;
 }
 
 body {
     display: grid;
-    grid-template-rows: 0.75fr 5fr 0.5fr;
+    grid-template-rows: 1fr 5fr 0.5fr;
     grid-template-areas: "Header" "Main" "Footer";
     margin: 0;
     background-color: transparent;
@@ -51,6 +52,8 @@ body {
     z-index: 100000;
     overflow: hidden;
     bottom: 1px;
+    display: flex;
+    justify-content:space-between;
 }
 
 .sidenav {
@@ -58,6 +61,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
+    
 }
 
 .sidenav button {
