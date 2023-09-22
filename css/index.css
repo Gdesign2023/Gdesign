@@ -3,6 +3,7 @@
     font-family: sans-serif;
     background-color: black;
 }
+
 video{
     display: flex;
     align-items: center;
@@ -60,7 +61,6 @@ body {
 .sidenav {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     color: #fff;
     
 }
