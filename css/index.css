@@ -10,11 +10,12 @@ video{
   }
 .titre {
     display: flex;
+    height: 80%;
     font-size: 60px;
     font-weight: bold;
+    align-items: center;
     justify-content: center;
     color: #BDA039;
-    margin-bottom: 20px;
 }
 
 body {
@@ -65,7 +66,8 @@ body {
     width: 100%;
     display: flex;
     color: #fff;
-    
+    bottom: 0;
+    height: 20%;
 }
 
 .sidenav button {
@@ -90,7 +92,7 @@ body {
 @media screen and (max-width: 758px) {
     .titre {
         display: flex;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: bold;
         justify-content: center;
         color: #BDA039;
