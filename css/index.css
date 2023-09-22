@@ -87,7 +87,7 @@ body {
 @media screen and (max-width: 758px) {
     .titre {
         display: flex;
-        font-size: 40px;
+        font-size: 400%;
         font-weight: bold;
         justify-content: center;
         color: #BDA039;
