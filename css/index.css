@@ -52,6 +52,7 @@ body {
     z-index: 100000;
     overflow: hidden;
     bottom: 1px;
+    overflow: hidden;
     display: flex;
     justify-content:space-between;
 }
@@ -87,7 +88,7 @@ body {
 @media screen and (max-width: 758px) {
     .titre {
         display: flex;
-        font-size: 400%;
+        font-size: 30px;
         font-weight: bold;
         justify-content: center;
         color: #BDA039;
