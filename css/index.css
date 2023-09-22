@@ -116,7 +116,7 @@ body {
         height: 100%;
     }
     body{
-        grid-template-rows: 0.75fr 6fr 0.50fr;
+        grid-template-rows: 0.75fr 6fr 0.30fr;
     }
     .header{
         border-bottom: #fff solid 2px;
