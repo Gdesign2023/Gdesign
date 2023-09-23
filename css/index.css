@@ -71,7 +71,10 @@ body {
 }
 
 .sidenav button {
-    background-color: transparent;
+    border-bottom:none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     color: #fff;
     font-size: 20px;
 }
@@ -142,7 +145,6 @@ body {
         border: none;
         color: #fff;
         font-size: 20px;
-        border-top: #fff solid 2px;
     }
 
     .sidenav span {
