@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../public/icon.png" />
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>Home</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a id="openBtn">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </a>
-        <div class="titre">
-            <span>Gdesign</span>
+      <a id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <div class="titre">
+        <span>Gdesign</span>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <div class="menu-tel">
+          <a id="closeBtn" class="close">×</a>
+          <span class="titre-m">Gdesign</span>
+          <button onclick="" class="" id="button1">Home</button>
+          <button onclick="page('cqnf')" class="" id="button2">
+            Ce que nous faisons
+          </button>
+          <button onclick="page('nt')" class="" id="button3">
+            Nos travaux
+          </button>
+          <button onclick="page('presentation')" class="" id="button4">
+            Présentation
+          </button>
+          <button onclick="page('nc')" class="" id="button5">
+            Nous contacter
+          </button>
         </div>
-        <div id="mySidenav" class="sidenav">
-            <div class="menu-tel">
-                <a id="closeBtn" class="close">×</a>
-                <span class="titre-m">Gdesign</span> 
-                <button onclick="" class="" id="button1">Home</button>
-                <button onclick="page('cqnf')" class="" id="button2">Ce que nous faisons</button>
-                <button onclick="page('nt')" class="" id="button3">Nos travaux</button>
-                <button onclick="page('presentation')" class="" id="button4">Présentation</button>
-                <button onclick="page('nc')" class="" id="button5">Nous contacter</button>
-            </div>
-        </div>
+      </div>
     </header>
     <div class="main">
-        <div class="containe-main">
-            <div class="img-gdesign"><img src="../public/foryou.png" alt="" /></div>
-            <div class="texte-gdesign">
-                <p class="titre-page">Travaillez avec des artistes en temps réel</p>
-                <p class="texte-page">Collaborez avec des artistes en temps réel pour donner vie à votre vision. Que ce soit
-                    pour du social
-                    media design, un logo, ou un flyer. Fournissez des commentaires, apportez des révisions et obtenez le
-                    design parfait pour votre marque ou votre entreprise</p>
-            </div>
-            <div class="texte-deux">
-                <P class="texte-page">Notre agence est composée de passionnés dans divers domaines, et nous nous engageons à
-                    vous fournir les
-                    designs, les montages, l'aide dont vous avez besoin pour atteindre vos objectifs. Que vous recherchiez
-                    du marketing digital, de la conception de sites web, du développement d'applications, des services
-                    créatifs, ou tout autre chose, nous sommes là pour vous. Travaillons ensemble pour vous faire évoluer
-                </P>
-            </div>
-            <div class="image-deux"><img src="../public/bureaux.jpg" alt="" /></div>
-    
-            <div class="carousel">
-                <div class="carousel-img"><button id="prevBtn" onclick="prev()">&lt;</button></div>
-                <div class="carousel-img"><img id="imageElement" src="" alt="Image"></div>
-                <div class="carousel-img"><button id="nextBtn" onclick="next()">&gt;</button></div>
-            </div>
-    
-            <div class="texte-carousel">
-                <p class="texte-page">Laissons nos clients parler à notre place</p>
-            </div>
+      <div class="containe-main">
+        <div class="img-gdesign"><img src="../public/foryou.png" alt="" /></div>
+        <div class="texte-gdesign">
+          <p class="titre-page">Travaillez avec des artistes en temps réel</p>
+          <p class="texte-page">
+            Collaborez avec des artistes en temps réel pour donner vie à votre
+            vision. Que ce soit pour du social media design, un logo, ou un
+            flyer. Fournissez des commentaires, apportez des révisions et
+            obtenez le design parfait pour votre marque ou votre entreprise
+          </p>
         </div>
+        <div class="texte-deux">
+          <p class="texte-page">
+            Notre agence est composée de passionnés dans divers domaines, et
+            nous nous engageons à vous fournir les designs, les montages, l'aide
+            dont vous avez besoin pour atteindre vos objectifs. Que vous
+            recherchiez du marketing digital, de la conception de sites web, du
+            développement d'applications, des services créatifs, ou tout autre
+            chose, nous sommes là pour vous. Travaillons ensemble pour vous
+            faire évoluer
+          </p>
+        </div>
+        <div class="image-deux"><img src="../public/bureaux.jpg" alt="" /></div>
+
+        <div class="carousel">
+          <div class="carousel-img">
+            <button id="prevBtn" onclick="prev()">&lt;</button>
+          </div>
+          <div class="carousel-img">
+            <img id="imageElement" src="" alt="Image" />
+          </div>
+          <div class="carousel-img">
+            <button id="nextBtn" onclick="next()">&gt;</button>
+          </div>
+        </div>
+
+        <div class="texte-carousel">
+          <p class="texte-page">Laissons nos clients parler à notre place</p>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
-        <img src="../public/footer-img-one.png" alt="" height="100%">
-        <div>
-            <a href="https://discord.gg/x2CQPnD6GW"><img src="../public/discord.png" alt="" height="100%"></a>
-            <a href="https://www.instagram.com/gdesignofficialaccount/"><img src="../public/insta.png" alt="" height="100%"></a>
-        </div>
+      <img src="../public/footer-img-one.png" alt="" height="100%" />
+      <div>
+        <a href="https://discord.gg/x2CQPnD6GW" title="discord"
+          ><img src="../public/discord.png" alt="" height="100%"
+        /></a>
+        <a
+          href="https://www.instagram.com/gdesignofficialaccount/"
+          title="insta"
+          ><img src="../public/insta.png" alt="" height="100%"
+        /></a>
+      </div>
     </footer>
-</body>
-<script src="../js/index.js"></script>
-<script src="../js/main.js"></script>
+  </body>
+  <script src="../js/index.js"></script>
+  <script src="../js/main.js"></script>
 </html>
