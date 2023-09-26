@@ -1,0 +1,90 @@
+.containe-main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "logo carousel-logo"
+    "carousel-flyers flyers"
+    "miniature carousel-miniature"
+    "carousel-montage montage"
+    "coding carousel-coding";
+}
+.containe-main .logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .carousel-logo {
+  grid-area: carousel-logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .flyers {
+  grid-area: flyers;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .carousel-flyers {
+  grid-area: carousel-flyers;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .miniature {
+  grid-area: miniature;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .carousel-miniature {
+  grid-area: carousel-miniature;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .montage {
+  grid-area: montage;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .carousel-montage {
+  grid-area: carousel-montage;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .coding {
+  grid-area: coding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-main .carousel-coding {
+  grid-area: carousel-coding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .containe-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "logo"
+      "carousel-logo"
+      "flyers"
+      "carousel-flyers"
+      "miniature"
+      "carousel-miniature"
+      "montage"
+      "carousel-montage"
+      "coding"
+      "carousel-coding";
+  }
+}
