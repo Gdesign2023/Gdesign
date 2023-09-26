@@ -43,15 +43,54 @@
     </header>
     <div class="main">
       <div class="containe-main">
-        <div class="logo"></div class="carousel-logo"></div>
-        
-        <div class="flyers"></div><div class="carousel-flyers"></div>
-        
-        <div class="miniature"></div><div class="carousel-miniature"></div>
-        
-        <div class="montage"></div><div class="carousel-montage"></div>
-        
-        <div class="coding"></div><div class="carousel-coding"></div>
+        <div class="logo">Logo</div>
+        <div class="carousel-logo">
+          <div class="carousel">
+            <div class="carousel-img">
+              <button id="prevBtn-logo" onclick="prev_logo()">&lt;</button>
+            </div>
+            <div class="carousel-img">
+              <img id="imageElement-logo" src="" alt="Image" />
+            </div>
+            <div class="carousel-img">
+              <button id="nextBtn-logo" onclick="next_logo()">&gt;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flyers">Flyers</div>
+        <div class="carousel-flyers">
+          <div class="carousel">
+            <div class="carousel-img">
+              <button id="prevBtn-flyers" onclick="prev_flyers()">&lt;</button>
+            </div>
+            <div class="carousel-img">
+              <img id="imageElement-flyers" src="" alt="Image" />
+            </div>
+            <div class="carousel-img">
+              <button id="nextBtn-flyers" onclick="next_flyers()">&gt;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="miniature">Miniature</div>
+        <div class="carousel-miniature">
+          <div class="carousel">
+            <div class="carousel-img">
+              <button id="prevBtn-miniature" onclick="prev_miniature()">
+                &lt;
+              </button>
+            </div>
+            <div class="carousel-img">
+              <img id="imageElement-miniature" src="" alt="Image" />
+            </div>
+            <div class="carousel-img">
+              <button id="nextBtn-miniature" onclick="next_miniature()">
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -69,4 +108,5 @@
     </footer>
   </body>
   <script src="../js/index.js"></script>
+  <script src="../js/nt.js"></script>
 </html>

@@ -20,9 +20,6 @@ function updateImage() {
   } else if (aff === 4) {
     imageElement.src = imageSources5;
   }
-
-  console.log("aff:", aff);
-  console.log("imageElement.src:", imageElement.src);
 }
 
 function next() {
