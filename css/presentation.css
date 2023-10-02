@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+.containe-boby {
+  margin: 5% 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+  gap: 5%;
+}
+.containe-body-header {
+  grid-area: header;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titre texte";
+}
+.containe-boby-header-titre {
+  grid-area: titre;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  color: #bda039;
+}
+.containe-boby-header-texte {
+  grid-area: texte;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.containe-boby-header-texte p {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+.containe-body-main {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containe-body-footer {
+  grid-area: footer;
+  width: 100%;
+  display: grid;
+  padding-bottom: 5%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "gb-dj gweb";
+}
+.containe-body-footer-one {
+  grid-area: gb-dj;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.containe-body-footer-two {
+  grid-area: gweb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.containe-body-footer-two img,
+.containe-body-footer-one img {
+  border-radius: 20px;
+  border: #fff 2px solid;
+}
+@media (max-width: 768px) {
+  .containe-body-header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titre" "texte";
+  }
+  .containe-body-footer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gb-dj" "gweb";
+  }
+  .containe-boby-header-texte {
+    font-size: 20px;
+  }
+  .containe-boby-header-titre {
+    font-size: 30px;
+  }
+  .containe-boby-header-texte {
+    margin-top: 5%;
+  }
+  .containe-body-footer-two {
+    margin-top: 5%;
+  }
+}
