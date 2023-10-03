@@ -76,6 +76,12 @@
   border: #fff 2px solid;
 }
 @media (max-width: 768px) {
+  .containe-body-main {
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: #fff 2px solid;
+    border-bottom: #fff 2px solid;
+  }
   .containe-body-header {
     grid-template-columns: 1fr;
     grid-template-areas: "titre" "texte";
