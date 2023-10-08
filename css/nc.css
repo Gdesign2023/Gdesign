@@ -1,0 +1,138 @@
+.containe-main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "gauche droit";
+  grid-gap: 10px;
+}
+.content-gauche {
+  margin-left: 10%;
+  grid-area: gauche;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "titre" "texte";
+  grid-gap: 10px;
+}
+.content-gauche-titre {
+  grid-area: titre;
+  font-size: 60px;
+  color: #bda039;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+.content-gauche-text {
+  grid-area: texte;
+  font-size: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+.content-droit {
+  margin-right: 10%;
+  grid-area: droit;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "texte-discord" "button-discord" "descri-discord" "texte-insta" "button-insta" "desci-insta";
+  grid-gap: 10px;
+}
+.content-droit-text-discord {
+  grid-area: texte-discord;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+.content-droit-button-discord {
+  grid-area: button-discord;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+.content-droit-discord-descri {
+  grid-area: descri-discord;
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  color: #bda039;
+}
+.content-droit-texte-insta {
+  grid-area: texte-insta;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+.content-droit-button-insta {
+  grid-area: button-insta;
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+.content-droit-insta-descri {
+  grid-area: desci-insta;
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  color: #bda039;
+}
+@media screen and (max-width: 768px) {
+  .containe-main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "gauche" "droit";
+  }
+  .content-droit {
+    margin-top: 40px;
+  }
+  .content-droit-text-discord {
+    width: 100%;
+  }
+  .content-droit-button-discord {
+    width: 100%;
+  }
+  .content-droit-discord-descri {
+    width: 100%;
+  }
+  .content-droit-texte-insta {
+    width: 100%;
+  }
+  .content-droit-button-insta {
+    width: 100%;
+  }
+  .content-droit-insta-descri {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
